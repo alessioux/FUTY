@@ -63,24 +63,375 @@ local info = {
     AU1 = "Upside-down League"
   },
 
-  clubs = {
-    england      = { "Kingchester Town", "Liverriver", "Chellake" },
-    italy        = { "Naples FC", "International FC", "Milano Sport FC" },
-    spain        = { "Fake Madrid", "Varcelline", "Non Atletic Capitals" },
-    germany      = { "Common Bavaria", "Dortburg Lions", "Frankfurt Blitz" },
-    france       = { "Olympique Bordeaux", "Paris Monarchs", "Lyonnais FC" },
-    brazil       = { "Rio Dragons", "São Verde FC", "Porto Sol" },
-    argentina    = { "Club Rosario Azul", "Buenos Aires Stars", "Cordoba United" },
-    unitedstates = { "Liberty FC", "New York Thunder", "Pacific Bay FC" },
-    japan        = { "Tokyo Phoenix", "Osaka Blades", "Kyoto Spirits" },
-    netherlands  = { "Amsterdam Storm", "Rotterdam Knights", "Eindhoven FC" },
-    portugal     = { "Lisbon Falcons", "Porto Mariners", "Braga Elite" },
-    russia       = { "Moscow Titans", "St. Petersburg Ice", "Volga FC" },
-    mexico       = { "Guadalajara Fire", "Monterrey Eagles", "Tijuana FC" },
-    southkorea   = { "Seoul Warriors", "Busan Thunder", "Incheon Blaze" },
-    canada       = { "Toronto Peaks", "Vancouver Aurora", "Montreal Impact" },
-    australia    = { "Sydney Roos", "Melbourne Surge", "Brisbane Heat" }
-  },
+local clubs = {
+    -- England
+    ["kingchester town"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Manchester United Red
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["liverriver"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Liverpool Red
+            shorts      = Color3.fromRGB(255,   0,   0),  -- Red
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["chellake"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Chelsea Blue
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(255, 165,   0),  -- Orange
+        }
+    },
+
+    -- Italy
+    ["naples fc"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0, 191, 255),  -- Napoli Light Blue
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["international fc"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Inter Milan Blue
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["milano sport fc"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- AC Milan Red
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+
+    -- Spain
+    ["fake madrid"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255, 255, 255),  -- Real Madrid White
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(128,   0, 128),  -- Purple
+        }
+    },
+    ["varcelline"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Barcelona Blue
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["non atletic capitals"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Atlético Madrid Red
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+
+    -- Germany
+    ["common bavaria"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Bayern Munich Red
+            shorts      = Color3.fromRGB(255,   0,   0),  -- Red
+            goalkeeper  = Color3.fromRGB(  0,   0,   0),  -- Black
+        }
+    },
+    ["dortburg lions"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255, 255,   0),  -- Dortmund Yellow
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["frankfurt blitz"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0,   0),  -- Eintracht Frankfurt Black
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+
+    -- France
+    ["olympique bordeaux"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255, 255, 255),  -- Lyon White
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(  0,   0, 255),  -- Blue
+        }
+    },
+    ["paris monarchs"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- PSG Blue
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["lyonnais fc"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255, 255, 255),  -- Lyon White
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(  0,   0, 255),  -- Blue
+        }
+    },
+
+    -- Brazil
+    ["rio dragons"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Flamengo Red
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["são verde fc"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0, 128,   0),  -- Palmeiras Green
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["porto sol"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255, 255, 255),  -- Santos White
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(  0,   0,   0),  -- Black
+        }
+    },
+
+    -- Argentina
+    ["club rosario azul"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Rosario Central Blue
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["buenos aires stars"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Boca Juniors Blue
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(255, 165,   0),  -- Orange
+        }
+    },
+    ["cordoba united"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Talleres Blue
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+
+    -- United States
+    ["liberty fc"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255, 255, 255),  -- LA Galaxy White
+            shorts      = Color3.fromRGB(  0,   0, 128),  -- Navy
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["new york thunder"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255, 255, 255),  -- NY Red Bulls White
+            shorts      = Color3.fromRGB(255,   0,   0),  -- Red
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["pacific bay fc"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0, 255,   0),  -- Sounders Green
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(128,   0, 128),  -- Purple
+        }
+    },
+
+    -- Japan
+    ["tokyo phoenix"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- FC Tokyo Red
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["osaka blades"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Gamba Osaka Blue
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["kyoto spirits"] = {
+        kit = {
+            shirt       = Color3.fromRGB(128,   0, 128),  -- Kyoto Purple
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+
+    -- Netherlands
+    ["amsterdam storm"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255, 255, 255),  -- Ajax White
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["rotterdam knights"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Feyenoord Red
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["eindhoven fc"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- PSV Red
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(  0,   0, 255),  -- Blue
+        }
+    },
+
+    -- Portugal
+    ["lisbon falcons"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Benfica Red
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["porto mariners"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Porto Blue
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["braga elite"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Braga Red
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+
+    -- Russia
+    ["moscow titans"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Spartak Red
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["st. petersburg ice"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Zenit Blue
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["volga fc"] = {
+        kit = {
+            shirt       = Color3.fromRGB(128,   0,   0),  -- Rubin Maroon
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+
+    -- Mexico
+    ["guadalajara fire"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Chivas Red
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["monterrey eagles"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Monterrey Blue
+            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["tijuana fc"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Tijuana Red
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+
+    -- South Korea
+    ["seoul warriors"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- FC Seoul Red
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["busan thunder"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Busan Red
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["incheon blaze"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- Incheon Blue
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+
+    -- Canada
+    ["toronto peaks"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255,   0,   0),  -- Toronto FC Red
+            shorts      = Color3.fromRGB(255,   0,   0),  -- Red
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["vancouver aurora"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255, 255, 255),  -- Whitecaps White
+            shorts      = Color3.fromRGB(  0,   0, 128),  -- Navy
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["montreal impact"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 255),  -- CF Montréal Blue
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+
+    -- Australia
+    ["sydney roos"] = {
+        kit = {
+            shirt       = Color3.fromRGB(135, 206, 235),  -- Sydney Sky Blue
+            shorts      = Color3.fromRGB(  0,   0, 128),  -- Navy
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+    ["melbourne surge"] = {
+        kit = {
+            shirt       = Color3.fromRGB(  0,   0, 128),  -- Victory Navy
+            shorts      = Color3.fromRGB(255, 255, 255),  -- White
+            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow
+        }
+    },
+    ["brisbane heat"] = {
+        kit = {
+            shirt       = Color3.fromRGB(255, 165,   0),  -- Roar Orange
+            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black
+            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green
+        }
+    },
+}
 
   rarities = {
     tots   = "Team of the Season",
