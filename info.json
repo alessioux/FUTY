@@ -1,1 +1,641 @@
-local info = {\n  countries = {\n    albania       = \"🇦🇱\",\n    argentina     = \"🇦🇷\",\n    australia     = \"🇦🇺\",\n    belgium       = \"🇧🇪\",\n    brazil        = \"🇧🇷\",\n    cameroon      = \"🇨🇲\",\n    canada        = \"🇨🇦\",\n    chile         = \"🇨🇱\",\n    china         = \"🇨🇳\",\n    colombia      = \"🇨🇴\",\n    croatia       = \"🇭🇷\",\n    denmark       = \"🇩🇰\",\n    egypt         = \"🇪🇬\",\n    england       = \"🇬🇧\",\n    france        = \"🇫🇷\",\n    germany       = \"🇩🇪\",\n    ghana         = \"🇬🇭\",\n    greece        = \"🇬🇷\",\n    iran          = \"🇮🇷\",\n    iraq          = \"🇮🇶\",\n    italy         = \"🇮🇹\",\n    japan         = \"🇯🇵\",\n    mexico        = \"🇲🇽\",\n    morocco       = \"🇲🇦\",\n    netherlands   = \"🇳🇱\",\n    nigeria       = \"🇳🇬\",\n    poland        = \"🇵🇱\",\n    portugal      = \"🇵🇹\",\n    qatar         = \"🇶🇦\",\n    russia        = \"🇷🇺\",\n    saudiarabia   = \"🇸🇦\",\n    senegal       = \"🇸🇳\",\n    serbia        = \"🇷🇸\",\n    southkorea    = \"🇰🇷\",\n    spain         = \"🇪🇸\",\n    sweden        = \"🇸🇪\",\n    switzerland   = \"🇨🇭\",\n    tunisia       = \"🇹🇳\",\n    turkey        = \"🇹🇷\",\n    ukraine       = \"🇺🇦\",\n    unitedstates  = \"🇺🇸\",\n    uruguay       = \"🇺🇾\"\n  },\n\n  leagues = {\n    EN1 = \"Imperial League\",\n    IT1 = \"Series Calcio\",\n    SP1 = \"Liga Estrella\",\n    DE1 = \"BundesKraft Liga\",\n    FR1 = \"Championat Royale\",\n    BR1 = \"Liga do Ouro\",\n    AR1 = \"Primera Estilo\",\n    US1 = \"National Football Circuit\",\n    JP1 = \"Neo Nippon League\",\n    ND1 = \"Dutch Velocity League\",\n    PG1 = \"Liga Lusitana\",\n    RU1 = \"Siberian Football League\",\n    ME1 = \"Liga Azteca\",\n    SK1 = \"Unnie League\",\n    CA1 = \"Maple League\",\n    AU1 = \"Upside-down League\"\n  },\n\nlocal clubs = {\n    -- England\n    [\"kingchester town\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Manchester United Red\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"liverriver\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Liverpool Red\n            shorts      = Color3.fromRGB(255,   0,   0),  -- Red\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"chellake\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Chelsea Blue\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(255, 165,   0),  -- Orange\n        }\n    },\n\n    -- Italy\n    [\"naples fc\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0, 191, 255),  -- Napoli Light Blue\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"international fc\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Inter Milan Blue\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"milano sport fc\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- AC Milan Red\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n\n    -- Spain\n    [\"fake madrid\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255, 255, 255),  -- Real Madrid White\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(128,   0, 128),  -- Purple\n        }\n    },\n    [\"varcelline\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Barcelona Blue\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"non atletic capitals\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Atlético Madrid Red\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n\n    -- Germany\n    [\"common bavaria\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Bayern Munich Red\n            shorts      = Color3.fromRGB(255,   0,   0),  -- Red\n            goalkeeper  = Color3.fromRGB(  0,   0,   0),  -- Black\n        }\n    },\n    [\"dortburg lions\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255, 255,   0),  -- Dortmund Yellow\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"frankfurt blitz\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0,   0),  -- Eintracht Frankfurt Black\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n\n    -- France\n    [\"olympique bordeaux\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255, 255, 255),  -- Lyon White\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(  0,   0, 255),  -- Blue\n        }\n    },\n    [\"paris monarchs\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- PSG Blue\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"lyonnais fc\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255, 255, 255),  -- Lyon White\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(  0,   0, 255),  -- Blue\n        }\n    },\n\n    -- Brazil\n    [\"rio dragons\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Flamengo Red\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"são verde fc\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0, 128,   0),  -- Palmeiras Green\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"porto sol\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255, 255, 255),  -- Santos White\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(  0,   0,   0),  -- Black\n        }\n    },\n\n    -- Argentina\n    [\"club rosario azul\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Rosario Central Blue\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"buenos aires stars\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Boca Juniors Blue\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(255, 165,   0),  -- Orange\n        }\n    },\n    [\"cordoba united\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Talleres Blue\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n\n    -- United States\n    [\"liberty fc\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255, 255, 255),  -- LA Galaxy White\n            shorts      = Color3.fromRGB(  0,   0, 128),  -- Navy\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"new york thunder\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255, 255, 255),  -- NY Red Bulls White\n            shorts      = Color3.fromRGB(255,   0,   0),  -- Red\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"pacific bay fc\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0, 255,   0),  -- Sounders Green\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(128,   0, 128),  -- Purple\n        }\n    },\n\n    -- Japan\n    [\"tokyo phoenix\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- FC Tokyo Red\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"osaka blades\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Gamba Osaka Blue\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"kyoto spirits\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(128,   0, 128),  -- Kyoto Purple\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n\n    -- Netherlands\n    [\"amsterdam storm\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255, 255, 255),  -- Ajax White\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"rotterdam knights\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Feyenoord Red\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"eindhoven fc\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- PSV Red\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(  0,   0, 255),  -- Blue\n        }\n    },\n\n    -- Portugal\n    [\"lisbon falcons\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Benfica Red\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"porto mariners\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Porto Blue\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"braga elite\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Braga Red\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n\n    -- Russia\n    [\"moscow titans\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Spartak Red\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"st. petersburg ice\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Zenit Blue\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"volga fc\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(128,   0,   0),  -- Rubin Maroon\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n\n    -- Mexico\n    [\"guadalajara fire\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Chivas Red\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"monterrey eagles\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Monterrey Blue\n            shorts      = Color3.fromRGB(  0,   0, 255),  -- Blue\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"tijuana fc\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Tijuana Red\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n\n    -- South Korea\n    [\"seoul warriors\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- FC Seoul Red\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"busan thunder\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Busan Red\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"incheon blaze\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- Incheon Blue\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n\n    -- Canada\n    [\"toronto peaks\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255,   0,   0),  -- Toronto FC Red\n            shorts      = Color3.fromRGB(255,   0,   0),  -- Red\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"vancouver aurora\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255, 255, 255),  -- Whitecaps White\n            shorts      = Color3.fromRGB(  0,   0, 128),  -- Navy\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"montreal impact\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 255),  -- CF Montréal Blue\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n\n    -- Australia\n    [\"sydney roos\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(135, 206, 235),  -- Sydney Sky Blue\n            shorts      = Color3.fromRGB(  0,   0, 128),  -- Navy\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n    [\"melbourne surge\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(  0,   0, 128),  -- Victory Navy\n            shorts      = Color3.fromRGB(255, 255, 255),  -- White\n            goalkeeper  = Color3.fromRGB(255, 255,   0),  -- Yellow\n        }\n    },\n    [\"brisbane heat\"] = {\n        kit = {\n            shirt       = Color3.fromRGB(255, 165,   0),  -- Roar Orange\n            shorts      = Color3.fromRGB(  0,   0,   0),  -- Black\n            goalkeeper  = Color3.fromRGB(  0, 128,   0),  -- Green\n        }\n    },\n}\n\n  rarities = {\n    tots   = \"Team of the Season\",\n    toty   = \"Team of the Year\",\n    totw   = \"Team of the Week\",\n    gold   = \"Gold\",\n    silver = \"Silver\",\n    bronze = \"Bronze\"\n  },\n\n  packs = {\n    goldpack = {\n      name       = \"Gold Players Pack\",\n      desc       = \"11 gold players; small chance of Team of the Week.\",\n      count      = 11,\n      cards      = { gold = 99, totw = 1 },\n      guaranteed = { state = false, card = nil }\n    },\n    silverpack = {\n      name       = \"Silver Players Pack\",\n      desc       = \"11 silver players; small chance of gold.\",\n      count      = 11,\n      cards      = { silver = 99, gold = 1 },\n      guaranteed = { state = false, card = nil }\n    },\n    bronzepack = {\n      name       = \"Bronze Players Pack\",\n      desc       = \"11 bronze players; small chance of silver.\",\n      count      = 11,\n      cards      = { bronze = 99, silver = 1 },\n      guaranteed = { state = false, card = nil }\n    }\n  },\n\n  playstyles = {\n    [\"Scoring\"] = {\n    -- Scoring\n    [1] = {\n      name = \"Chip Shot\",\n      [1] = \"Faster, more accurate chip shots.\",\n      [2] = \"Very fast chip shots with precise placement.\"\n    },\n    [2] = {\n      name = \"Finesse Shot\",\n      [1] = \"Faster shots with extra curve.\",\n      [2] = \"Quick shots with maximum curve.\"\n    },\n    [3] = {\n      name = \"Power Shot\",\n      [1] = \"Stronger, faster driven shots.\",\n      [2] = \"High-speed shots with added power.\"\n    },\n    [4] = {\n      name = \"Power Header\",\n      [1] = \"More powerful headers.\",\n      [2] = \"Hard, accurate headers.\"\n    },\n    [5] = {\n      name = \"Low Driven Shot\",\n      [1] = \"Faster, low-skimming shots.\",\n      [2] = \"Fast shots with tight accuracy.\"\n    },\n    [6] = {\n      name = \"Dead Ball\",\n      [1] = \"Quicker, more accurate set-pieces.\",\n      [2] = \"Fast set-pieces with better curve.\"\n    },\n    },\n    [\"Passing\"] = {\n    -- Passing\n    [7] = {\n      name = \"Incisive Pass\",\n      [1] = \"More accurate through-balls.\",\n      [2] = \"Precise through-balls with added curve.\"\n    },\n    [8] = {\n      name = \"Pinged Pass\",\n      [1] = \"Faster ground passes.\",\n      [2] = \"Top-speed passes with full control.\"\n    },\n    [9] = {\n      name = \"Long Ball Pass\",\n      [1] = \"More accurate lofted passes.\",\n      [2] = \"Accurate long passes hard to intercept.\"\n    },\n    [10] = {\n      name = \"Tiki Taka\",\n      [1] = \"Accurate first-time ground passes.\",\n      [2] = \"Even more precise short passes.\"\n    },\n    [11] = {\n      name = \"Whipped Pass\",\n      [1] = \"Faster, accurate crosses.\",\n      [2] = \"Driven crosses with extra speed.\"\n    },\n    },\n    [\"Ball Control\"] = {\n    [12] = {\n      name = \"First Touch\",\n      [1] = \"Fewer trapping errors.\",\n      [2] = \"Minimal trap errors and quicker control.\"\n    },\n    [13] = {\n      name = \"Flair\",\n      [1] = \"Adds flair moves with accuracy.\",\n      [2] = \"More flair and precise execution.\"\n    },\n    [14] = {\n      name = \"Press Proven\",\n      [1] = \"Better control when jogging.\",\n      [2] = \"Tighter shielding and close control.\"\n    },\n    [15] = {\n      name = \"Rapid\",\n      [1] = \"Faster sprint dribbles.\",\n      [2] = \"Max sprint speed, fewer errors.\"\n    },\n    [16] = {\n      name = \"Technical\",\n      [1] = \"Sharper turns while sprinting.\",\n      [2] = \"Precise turns at top speed.\"\n    },\n    [17] = {\n      name = \"Trickster\",\n      [1] = \"Unlocks flick-style skill moves.\",\n      [2] = \"Extra flicks with agile dribbles.\"\n    },\n    },\n    [\"Defending\"] = {\n    [18] = {\n      name = \"Block\",\n      [1] = \"Better reach for blocks.\",\n      [2] = \"Even wider reach and success.\"\n    },\n    [19] = {\n      name = \"Bruiser\",\n      [1] = \"Stronger physical tackles.\",\n      [2] = \"Harder tackles and hold-up play.\"\n    },\n    [20] = {\n      name = \"Intercept\",\n      [1] = \"Improved interception reach.\",\n      [2] = \"Best reach and ball retention.\"\n    },\n    [21] = {\n      name = \"Jockey\",\n      [1] = \"Faster sprint-jockey transitions.\",\n      [2] = \"Quickest shift from jockey to sprint.\"\n    },\n    [22] = {\n      name = \"Anticipate\",\n      [1] = \"Better standing tackles.\",\n      [2] = \"Highest tackle success at feet.\"\n    },\n    [23] = {\n      name = \"Slide Tackle\",\n      [1] = \"Slide and keep the ball.\",\n      [2] = \"Wider coverage and ball stop.\"\n    },\n    },\n    [\"Physical\"] = {\n    -- Physical\n    [24] = {\n      name = \"Quick Step\",\n      [1] = \"Faster initial sprints.\",\n      [2] = \"Strong burst off the mark.\"\n    },\n    [25] = {\n      name = \"Trivela\",\n      [1] = \"Outside-foot passes/shots.\",\n      [2] = \"Better power and accuracy on trivela.\"\n    },\n    [26] = {\n      name = \"Relentless\",\n      [1] = \"Slower fatigue loss.\",\n      [2] = \"Longer stamina and quicker recovery.\"\n    },\n    [27] = {\n      name = \"Aerial\",\n      [1] = \"Higher jumps.\",\n      [2] = \"Max jump and aerial control.\"\n    },\n    [28] = {\n      name = \"Long Throw\",\n      [1] = \"Longer throw-ins.\",\n      [2] = \"Max distance on throw-ins.\"\n    },\n    [29] = {\n      name = \"Acrobatic\",\n      [1] = \"Better volley accuracy.\",\n      [2] = \"More accurate acrobatic volleys.\"\n    },\n  },\n    [\"Goalkeeping\"] = {\n    [30] = {\n      name = \"Far Throw\",\n      [1] = \"Farther, more accurate throws.\",\n      [2] = \"Max distance and accuracy.\"\n    },\n    [31] = {\n      name = \"Footwork\",\n      [1] = \"More foot-based saves.\",\n      [2] = \"Frequent, precise foot saves.\"\n    },\n    [32] = {\n      name = \"Cross Claimer\",\n      [1] = \"Better at catching crosses.\",\n      [2] = \"More aggressive cross claims.\"\n    },\n    [33] = {\n      name = \"Rush Out\",\n      [1] = \"More aggressive rushes.\",\n      [2] = \"Quicker decisions off the line.\"\n    },\n    [34] = {\n      name = \"Far Reach\",\n      [1] = \"Increased reach on shots.\",\n      [2] = \"Max reach for long shots.\"\n    },\n    [35] = {\n      name = \"Deflector\",\n      [1] = \"Guides deflections safely.\",\n      [2] = \"Directs deflections to safe spots.\"\n    }\n  },\n  [\"positions\"] = {\n    [\"GK\"] = \"Goalkeeper\",\n    [\"CB\"] = \"Center-Back\",\n    [\"LB\"] = \"Left-Back\",\n    [\"RB\"] = \"Right-Back\",\n    [\"LWB\"] = \"Left Wing-Back\",\n    [\"RWB\"] = \"Right Wing-Back\",\n    [\"LM\"] = \"Left Midfielder\",\n    [\"CM\"] = \"Center Midfielder\",\n    [\"CDM\"] = \"Defensive Midfielder\",\n    [\"CAM\"] = \"Attacking Midfielder\",\n    [\"RM\"] = \"Right Midfielder\",\n    [\"LW\"] = \"Left Wing\",\n    [\"RW\"] = \"Right Wing\",\n    [\"LF\"] = \"Left Forward\",\n    [\"RF\"] = \"Right Forward\",\n    [\"CF\"] = \"Center Forward\",\n    [\"ST\"] = \"Striker\"\n  },\n 
+{
+  "countries": {
+    "albania": "🇦🇱",
+    "argentina": "🇦🇷",
+    "australia": "🇦🇺",
+    "belgium": "🇧🇪",
+    "brazil": "🇧🇷",
+    "cameroon": "🇨🇲",
+    "canada": "🇨🇦",
+    "chile": "🇨🇱",
+    "china": "🇨🇳",
+    "colombia": "🇨🇴",
+    "croatia": "🇭🇷",
+    "denmark": "🇩🇰",
+    "egypt": "🇪🇬",
+    "england": "🇬🇧",
+    "france": "🇫🇷",
+    "germany": "🇩🇪",
+    "ghana": "🇬🇭",
+    "greece": "🇬🇷",
+    "iran": "🇮🇷",
+    "iraq": "🇮🇶",
+    "italy": "🇮🇹",
+    "japan": "🇯🇵",
+    "mexico": "🇲🇽",
+    "morocco": "🇲🇦",
+    "netherlands": "🇳🇱",
+    "nigeria": "🇳🇬",
+    "poland": "🇵🇱",
+    "portugal": "🇵🇹",
+    "qatar": "🇶🇦",
+    "russia": "🇷🇺",
+    "saudiarabia": "🇸🇦",
+    "senegal": "🇸🇳",
+    "serbia": "🇷🇸",
+    "southkorea": "🇰🇷",
+    "spain": "🇪🇸",
+    "sweden": "🇸🇪",
+    "switzerland": "🇨🇭",
+    "tunisia": "🇹🇳",
+    "turkey": "🇹🇷",
+    "ukraine": "🇺🇦",
+    "unitedstates": "🇺🇸",
+    "uruguay": "🇺🇾"
+  },
+  "leagues": {
+    "EN1": "Imperial League",
+    "IT1": "Series Calcio",
+    "SP1": "Liga Estrella",
+    "DE1": "BundesKraft Liga",
+    "FR1": "Championat Royale",
+    "BR1": "Liga do Ouro",
+    "AR1": "Primera Estilo",
+    "US1": "National Football Circuit",
+    "JP1": "Neo Nippon League",
+    "ND1": "Dutch Velocity League",
+    "PG1": "Liga Lusitana",
+    "RU1": "Siberian Football League",
+    "ME1": "Liga Azteca",
+    "SK1": "Unnie League",
+    "CA1": "Maple League",
+    "AU1": "Upside-down League"
+  },
+  "clubs": {
+    "kingchester town": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "liverriver": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [255, 0, 0],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "chellake": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [255, 165, 0]
+      }
+    },
+    "naples fc": {
+      "kit": {
+        "shirt": [0, 191, 255],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "international fc": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "milano sport fc": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "fake madrid": {
+      "kit": {
+        "shirt": [255, 255, 255],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [128, 0, 128]
+      }
+    },
+    "varcelline": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "non atletic capitals": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "common bavaria": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [255, 0, 0],
+        "goalkeeper": [0, 0, 0]
+      }
+    },
+    "dortburg lions": {
+      "kit": {
+        "shirt": [255, 255, 0],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "frankfurt blitz": {
+      "kit": {
+        "shirt": [0, 0, 0],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "olympique bordeaux": {
+      "kit": {
+        "shirt": [255, 255, 255],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [0, 0, 255]
+      }
+    },
+    "paris monarchs": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "lyonnais fc": {
+      "kit": {
+        "shirt": [255, 255, 255],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [0, 0, 255]
+      }
+    },
+    "rio dragons": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "são verde fc": {
+      "kit": {
+        "shirt": [0, 128, 0],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "porto sol": {
+      "kit": {
+        "shirt": [255, 255, 255],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [0, 0, 0]
+      }
+    },
+    "club rosario azul": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "buenos aires stars": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [255, 165, 0]
+      }
+    },
+    "cordoba united": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "liberty fc": {
+      "kit": {
+        "shirt": [255, 255, 255],
+        "shorts": [0, 0, 128],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "new york thunder": {
+      "kit": {
+        "shirt": [255, 255, 255],
+        "shorts": [255, 0, 0],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "pacific bay fc": {
+      "kit": {
+        "shirt": [0, 255, 0],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [128, 0, 128]
+      }
+    },
+    "tokyo phoenix": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "osaka blades": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "kyoto spirits": {
+      "kit": {
+        "shirt": [128, 0, 128],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "amsterdam storm": {
+      "kit": {
+        "shirt": [255, 255, 255],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "rotterdam knights": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "eindhoven fc": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [0, 0, 255]
+      }
+    },
+    "lisbon falcons": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "porto mariners": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "braga elite": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "moscow titans": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "st. petersburg ice": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "volga fc": {
+      "kit": {
+        "shirt": [128, 0, 0],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "guadalajara fire": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "monterrey eagles": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 255],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "tijuana fc": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "seoul warriors": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "busan thunder": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "incheon blaze": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "toronto peaks": {
+      "kit": {
+        "shirt": [255, 0, 0],
+        "shorts": [255, 0, 0],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "vancouver aurora": {
+      "kit": {
+        "shirt": [255, 255, 255],
+        "shorts": [0, 0, 128],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "montreal impact": {
+      "kit": {
+        "shirt": [0, 0, 255],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "sydney roos": {
+      "kit": {
+        "shirt": [135, 206, 235],
+        "shorts": [0, 0, 128],
+        "goalkeeper": [0, 128, 0]
+      }
+    },
+    "melbourne surge": {
+      "kit": {
+        "shirt": [0, 0, 128],
+        "shorts": [255, 255, 255],
+        "goalkeeper": [255, 255, 0]
+      }
+    },
+    "brisbane heat": {
+      "kit": {
+        "shirt": [255, 165, 0],
+        "shorts": [0, 0, 0],
+        "goalkeeper": [0, 128, 0]
+      }
+    }
+  },
+  "rarities": {
+    "tots": "Team of the Season",
+    "toty": "Team of the Year",
+    "totw": "Team of the Week",
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze"
+  },
+  "packs": {
+    "goldpack": {
+      "name": "Gold Players Pack",
+      "desc": "11 gold players; small chance of Team of the Week.",
+      "count": 11,
+      "cards": { "gold": 99, "totw": 1 },
+      "guaranteed": { "state": false, "card": null }
+    },
+    "silverpack": {
+      "name": "Silver Players Pack",
+      "desc": "11 silver players; small chance of gold.",
+      "count": 11,
+      "cards": { "silver": 99, "gold": 1 },
+      "guaranteed": { "state": false, "card": null }
+    },
+    "bronzepack": {
+      "name": "Bronze Players Pack",
+      "desc": "11 bronze players; small chance of silver.",
+      "count": 11,
+      "cards": { "bronze": 99, "silver": 1 },
+      "guaranteed": { "state": false, "card": null }
+    }
+  },
+  "playstyles": {
+    "Scoring": {
+      "1": {
+        "name": "Chip Shot",
+        "1": "Faster, more accurate chip shots.",
+        "2": "Very fast chip shots with precise placement."
+      },
+      "2": {
+        "name": "Finesse Shot",
+        "1": "Faster shots with extra curve.",
+        "2": "Quick shots with maximum curve."
+      },
+      "3": {
+        "name": "Power Shot",
+        "1": "Stronger, faster driven shots.",
+        "2": "High-speed shots with added power."
+      },
+      "4": {
+        "name": "Power Header",
+        "1": "More powerful headers.",
+        "2": "Hard, accurate headers."
+      },
+      "5": {
+        "name": "Low Driven Shot",
+        "1": "Faster, low-skimming shots.",
+        "2": "Fast shots with tight accuracy."
+      },
+      "6": {
+        "name": "Dead Ball",
+        "1": "Quicker, more accurate set-pieces.",
+        "2": "Fast set-pieces with better curve."
+      }
+    },
+    "Passing": {
+      "7": {
+        "name": "Incisive Pass",
+        "1": "More accurate through-balls.",
+        "2": "Precise through-balls with added curve."
+      },
+      "8": {
+        "name": "Pinged Pass",
+        "1": "Faster ground passes.",
+        "2": "Top-speed passes with full control."
+      },
+      "9": {
+        "name": "Long Ball Pass",
+        "1": "More accurate lofted passes.",
+        "2": "Accurate long passes hard to intercept."
+      },
+      "10": {
+        "name": "Tiki Taka",
+        "1": "Accurate first-time ground passes.",
+        "2": "Even more precise short passes."
+      },
+      "11": {
+        "name": "Whipped Pass",
+        "1": "Faster, accurate crosses.",
+        "2": "Driven crosses with extra speed."
+      }
+    },
+    "Ball Control": {
+      "12": {
+        "name": "First Touch",
+        "1": "Fewer trapping errors.",
+        "2": "Minimal trap errors and quicker control."
+      },
+      "13": {
+        "name": "Flair",
+        "1": "Adds flair moves with accuracy.",
+        "2": "More flair and precise execution."
+      },
+      "14": {
+        "name": "Press Proven",
+        "1": "Better control when jogging.",
+        "2": "Tighter shielding and close control."
+      },
+      "15": {
+        "name": "Rapid",
+        "1": "Faster sprint dribbles.",
+        "2": "Max sprint speed, fewer errors."
+      },
+      "16": {
+        "name": "Technical",
+        "1": "Sharper turns while sprinting.",
+        "2": "Precise turns at top speed."
+      },
+      "17": {
+        "name": "Trickster",
+        "1": "Unlocks flick-style skill moves.",
+        "2": "Extra flicks with agile dribbles."
+      }
+    },
+    "Defending": {
+      "18": {
+        "name": "Block",
+        "1": "Better reach for blocks.",
+        "2": "Even wider reach and success."
+      },
+      "19": {
+        "name": "Bruiser",
+        "1": "Stronger physical tackles.",
+        "2": "Harder tackles and hold-up play."
+      },
+      "20": {
+        "name": "Intercept",
+        "1": "Improved interception reach.",
+        "2": "Best reach and ball retention."
+      },
+      "21": {
+        "name": "Jockey",
+        "1": "Faster sprint-jockey transitions.",
+        "2": "Quickest shift from jockey to sprint."
+      },
+      "22": {
+        "name": "Anticipate",
+        "1": "Better standing tackles.",
+        "2": "Highest tackle success at feet."
+      },
+      "23": {
+        "name": "Slide Tackle",
+        "1": "Slide and keep the ball.",
+        "2": "Wider coverage and ball stop."
+      }
+    },
+    "Physical": {
+      "24": {
+        "name": "Quick Step",
+        "1": "Faster initial sprints.",
+        "2": "Strong burst off the mark."
+      },
+      "25": {
+        "name": "Trivela",
+        "1": "Outside-foot passes/shots.",
+        "2": "Better power and accuracy on trivela."
+      },
+      "26": {
+        "name": "Relentless",
+        "1": "Slower fatigue loss.",
+        "2": "Longer stamina and quicker recovery."
+      },
+      "27": {
+        "name": "Aerial",
+        "1": "Higher jumps.",
+        "2": "Max jump and aerial control."
+      },
+      "28": {
+        "name": "Long Throw",
+        "1": "Longer throw-ins.",
+        "2": "Max distance on throw-ins."
+      },
+      "29": {
+        "name": "Acrobatic",
+        "1": "Better volley accuracy.",
+        "2": "More accurate acrobatic volleys."
+      }
+    },
+    "Goalkeeping": {
+      "30": {
+        "name": "Far Throw",
+        "1": "Farther, more accurate throws.",
+        "2": "Max distance and accuracy."
+      },
+      "31": {
+        "name": "Footwork",
+        "1": "More foot-based saves.",
+        "2": "Frequent, precise foot saves."
+      },
+      "32": {
+        "name": "Cross Claimer",
+        "1": "Better at catching crosses.",
+        "2": "More aggressive cross claims."
+      },
+      "33": {
+        "name": "Rush Out",
+        "1": "More aggressive rushes.",
+        "2": "Quicker decisions off the line."
+      },
+      "34": {
+        "name": "Far Reach",
+        "1": "Increased reach on shots.",
+        "2": "Max reach for long shots."
+      },
+      "35": {
+        "name": "Deflector",
+        "1": "Guides deflections safely.",
+        "2": "Directs deflections to safe spots."
+      }
+    },
+    "positions": {
+      "GK": "Goalkeeper",
+      "CB": "Center-Back",
+      "LB": "Left-Back",
+      "RB": "Right-Back",
+      "LWB": "Left Wing-Back",
+      "RWB": "Right Wing-Back",
+      "LM": "Left Midfielder",
+      "CM": "Center Midfielder",
+      "CDM": "Defensive Midfielder",
+      "CAM": "Attacking Midfielder",
+      "RM": "Right Midfielder",
+      "LW": "Left Wing",
+      "RW": "Right Wing",
+      "LF": "Left Forward",
+      "RF": "Right Forward",
+      "CF": "Center Forward",
+      "ST": "Striker"
+    }
+  }
+}
