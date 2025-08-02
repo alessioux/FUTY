@@ -617,7 +617,8 @@
         "1": "Guides deflections safely.",
         "2": "Directs deflections to safe spots."
       }
-    },
+    }
+  },
     "positions": {
       "GK": "Goalkeeper",
       "CB": "Center-Back",
@@ -636,6 +637,5 @@
       "RF": "Right Forward",
       "CF": "Center Forward",
       "ST": "Striker"
-    }
   }
 }
