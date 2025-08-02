@@ -413,21 +413,21 @@
       "desc": "11 gold players; small chance of Team of the Week.",
       "count": 11,
       "cards": { "gold": 99, "totw": 1 },
-      "guaranteed": { "state": false, "card": "none" }
+      "guaranteed": { "state": false, "card": "gold" }
     },
     "silverpack": {
       "name": "Silver Players Pack",
       "desc": "11 silver players; small chance of gold.",
       "count": 11,
       "cards": { "silver": 99, "gold": 1 },
-      "guaranteed": { "state": false, "card": "none" }
+      "guaranteed": { "state": false, "card": "silver" }
     },
     "bronzepack": {
       "name": "Bronze Players Pack",
       "desc": "11 bronze players; small chance of silver.",
       "count": 11,
       "cards": { "bronze": 99, "silver": 1 },
-      "guaranteed": { "state": false, "card": "none" }
+      "guaranteed": { "state": false, "card": "bronze" }
     }
   },
   "playstyles": {
