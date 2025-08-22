@@ -1,0 +1,625 @@
+Output:
+### 🇦🇺 Sydney Roos (Australia – Upside-down League)
+- Lachlan Ellis (GK) – Gold
+- Toby Smith (RB) – Gold
+- Zac Parker (CB) – Gold
+- Brad Clark (CB) – Bronze
+- Dale Clark (LB) – Gold
+- Toby White (CDM) – Gold
+- Toby Johnson (CM) – Gold
+- Jack Ellis (CAM) – Gold
+- Jack Smith (RW) – Silver
+- Cooper Reid (ST) – Gold
+- Zac Taylor (LW) – Gold
+
+### 🇦🇺 Melbourne Surge (Australia – Upside-down League)
+- Jack White (GK) – Gold
+- Brad Parker (RB) – Gold
+- Brad Mitchell (CB) – Gold
+- Cooper Barnes (CB) – Silver
+- Harrison Ellis (LB) – Gold
+- Harrison Johnson (CDM) – Gold
+- Jack Parker (CM) – Gold
+- Toby Taylor (CAM) – Gold
+- Cooper Ellis (RW) – Gold
+- Jack Foster (ST) – Bronze
+- Rhys White (LW) – Gold
+
+### 🇦🇺 Brisbane Heat (Australia – Upside-down League)
+- Harrison Mitchell (GK) – Gold
+- Archie Clark (RB) – Gold
+- Jack Barnes (CB) – Gold
+- Dale Parker (CB) – Bronze
+- Harrison White (LB) – Gold
+- Rhys Foster (CDM) – Silver
+- Rhys Clark (CM) – Gold
+- Archie Barnes (CAM) – Gold
+- Harrison Parker (RW) – Gold
+- Cooper Parker (ST) – Gold
+- Lachlan Mitchell (LW) – Gold
+
+### 🇩🇪 Common Bavaria (Germany – BundesKraft Liga)
+- Steffen Schäfer (GK) – Gold
+- Matthias Zimmer (RB) – Gold
+- Klaus Zimmer (CB) – Silver
+- Erik Keller (CB) – Gold
+- Heiko Vogel (LB) – Gold
+- Klaus Hoffmann (CDM) – Gold
+- Heiko Zimmer (CM) – Gold
+- Christoph Gruber (CAM) – Gold
+- Christoph Fischer (RW) – Gold
+- Steffen Fischer (ST) – Bronze
+- Gunnar Gruber (LW) – Gold
+
+### 🇩🇪 Dortburg Lions (Germany – BundesKraft Liga)
+- Jannik Gruber (GK) – Gold
+- Friedrich Gruber (RB) – Gold
+- Christoph Reuter (CB) – Gold
+- Matthias Pohl (CB) – Gold
+- Gunnar Vogel (LB) – Gold
+- Dirk Zimmer (CDM) – Gold
+- Heiko Pohl (CM) – Bronze
+- Christoph Meyer (CAM) – Gold
+- Gunnar Hoffmann (RW) – Gold
+- Björn Keller (ST) – Gold
+- Gunnar Keller (LW) – Silver
+
+### 🇩🇪 Frankfurt Blitz (Germany – BundesKraft Liga)
+- Heiko Jäger (GK) – Bronze
+- Christoph Zimmer (RB) – Gold
+- Erik Lorenz (CB) – Gold
+- Matthias Becker (CB) – Gold
+- Niklas Hoffmann (LB) – Silver
+- Matthias Gruber (CDM) – Gold
+- Steffen Meyer (CM) – Gold
+- Niklas Vogel (CAM) – Gold
+- Steffen Becker (RW) – Gold
+- Matthias Hoffmann (ST) – Gold
+- Björn Hoffmann (LW) – Gold
+
+### 🇫🇷 Olympique Bordeaux (France – Championat Royale)
+- Étienne Noël (GK) – Silver
+- Rémi Noël (RB) – Gold
+- Benoît Dubois (CB) – Gold
+- Antoine François (CB) – Gold
+- Benoît Lefèvre (LB) – Gold
+- Guillaume Martin (CDM) – Gold
+- Pierre Lefèvre (CM) – Gold
+- Rémi Garnier (CAM) – Gold
+- Nicolas Thomas (RW) – Bronze
+- Étienne Simon (ST) – Gold
+- Nicolas Martin (LW) – Gold
+
+### 🇫🇷 Paris Monarchs (France – Championat Royale)
+- Julien Bernard (GK) – Gold
+- Rémi Bernard (RB) – Gold
+- Étienne Dubois (CB) – Gold
+- Étienne Garnier (CB) – Silver
+- Pierre Vidal (LB) – Gold
+- Maxime Garnier (CDM) – Gold
+- Antoine Dubois (CM) – Gold
+- Pierre Bernard (CAM) – Gold
+- Clément Vidal (RW) – Gold
+- Nicolas Moreau (ST) – Bronze
+- Antoine Vidal (LW) – Gold
+
+### 🇫🇷 Lyonnais FC (France – Championat Royale)
+- Julien Martin (GK) – Gold
+- Olivier Bernard (RB) – Gold
+- Nicolas Dubois (CB) – Silver
+- Nicolas François (CB) – Gold
+- François Vidal (LB) – Gold
+- Guillaume Dubois (CDM) – Gold
+- Pierre Thomas (CM) – Gold
+- Étienne Lefèvre (CAM) – Gold
+- Étienne Thomas (RW) – Gold
+- Damien Simon (ST) – Gold
+- Clément Garnier (LW) – Bronze
+
+### 🇮🇹 Naples FC (Italy – Series Calcio)
+- Nicolò Parisi (GK) – Gold
+- Paolo Testa (RB) – Gold
+- Nicolò Donati (CB) – Silver
+- Tommaso Esposito (CB) – Gold
+- Tommaso Ferrari (LB) – Gold
+- Dante Santoro (CDM) – Bronze
+- Battista Marchetti (CM) – Gold
+- Gianluca Galli (CAM) – Gold
+- Lorenzo Santoro (RW) – Gold
+- Paolo Rossi (ST) – Gold
+- Mattia Valente (LW) – Gold
+
+### 🇮🇹 International FC (Italy – Series Calcio)
+- Tommaso Conti (GK) – Bronze
+- Emanuele Donati (RB) – Gold
+- Carmine Esposito (CB) – Gold
+- Paolo Parisi (CB) – Gold
+- Battista Barbieri (LB) – Gold
+- Nicolò Barbieri (CDM) – Silver
+- Stefano Parisi (CM) – Gold
+- Riccardo Testa (CAM) – Gold
+- Mattia Barbieri (RW) – Gold
+- Nicolò Zanetti (ST) – Gold
+- Stefano Rossi (LW) – Gold
+
+### 🇮🇹 Milano Sport FC (Italy – Series Calcio)
+- Battista Rossi (GK) – Gold
+- Stefano Marchetti (RB) – Gold
+- Gianluca Marchetti (CB) – Gold
+- Gianluca Testa (CB) – Silver
+- Alessio Marchetti (LB) – Gold
+- Emanuele Valente (CDM) – Gold
+- Lorenzo Valente (CM) – Gold
+- Carmine Zanetti (CAM) – Gold
+- Nicolò Santoro (RW) – Bronze
+- Gianluca Rossi (ST) – Gold
+- Carmine Barbieri (LW) – Gold
+
+### 🇰🇷 Seoul Warriors (Southkorea – Unnie League)
+- Chan Song (GK) – Silver
+- Chan Kim (RB) – Gold
+- Jae Kang (CB) – Gold
+- Won Lim (CB) – Gold
+- Dong Yoon (LB) – Gold
+- Byung Song (CDM) – Gold
+- Min Song (CM) – Gold
+- Dong Song (CAM) – Gold
+- Jae Lee (RW) – Bronze
+- Jae Yang (ST) – Gold
+- Tae Kang (LW) – Gold
+
+### 🇰🇷 Busan Thunder (Southkorea – Unnie League)
+- Sang Shin (GK) – Gold
+- Hyun Jang (RB) – Silver
+- Byung Yoon (CB) – Gold
+- Byung Lim (CB) – Gold
+- Tae Jeong (LB) – Gold
+- Young Lim (CDM) – Gold
+- Young Yang (CM) – Gold
+- Byung Jeong (CAM) – Gold
+- Soo Yoon (RW) – Gold
+- Seong Kang (ST) – Gold
+- Hyun Jeong (LW) – Bronze
+
+### 🇰🇷 Incheon Blaze (Southkorea – Unnie League)
+- Dong Jeong (GK) – Gold
+- Min Kang (RB) – Gold
+- Young Kim (CB) – Gold
+- Min Shin (CB) – Gold
+- Chan Choi (LB) – Bronze
+- Yong Yang (CDM) – Silver
+- Sang Park (CM) – Gold
+- Sang Kim (CAM) – Gold
+- Yong Yoon (RW) – Gold
+- Dong Park (ST) – Gold
+- Chan Yang (LW) – Gold
+
+### 🇲🇽 Guadalajara Fire (Mexico – Liga Azteca)
+- Emilio Cervantes (GK) – Gold
+- Carlos Ortiz (RB) – Silver
+- Pablo Zamora (CB) – Gold
+- Diego Pérez (CB) – Gold
+- Luis Pérez (LB) – Gold
+- Sergio García (CDM) – Gold
+- Emilio Díaz (CM) – Gold
+- Emilio Torres (CAM) – Gold
+- Emilio Pérez (RW) – Gold
+- Sergio Ramírez (ST) – Bronze
+- Luis Hernández (LW) – Gold
+
+### 🇲🇽 Monterrey Eagles (Mexico – Liga Azteca)
+- Emilio Hernández (GK) – Bronze
+- Pablo Hernández (RB) – Gold
+- Sergio Luna (CB) – Gold
+- Alejandro Jiménez (CB) – Gold
+- Pablo Flores (LB) – Silver
+- Sergio Zamora (CDM) – Gold
+- Pablo Torres (CM) – Gold
+- Emilio Morales (CAM) – Gold
+- Oscar Cervantes (RW) – Gold
+- Oscar Torres (ST) – Gold
+- Mario Hernández (LW) – Gold
+
+### 🇲🇽 Tijuana FC (Mexico – Liga Azteca)
+- Fernando Pérez (GK) – Bronze
+- Alejandro Ramírez (RB) – Gold
+- Guillermo Jiménez (CB) – Silver
+- Fernando Torres (CB) – Gold
+- Carlos Morales (LB) – Gold
+- Alejandro Ortiz (CDM) – Gold
+- Guillermo Díaz (CM) – Gold
+- Carlos Torres (CAM) – Gold
+- Emilio Ortiz (RW) – Gold
+- Guillermo Hernández (ST) – Gold
+- Javier García (LW) – Gold
+
+### 🇵🇹 Lisbon Falcons (Portugal – Liga Lusitana)
+- Rúben Costa (GK) – Bronze
+- Tiago Costa (RB) – Gold
+- Luís Martins (CB) – Gold
+- Fábio Fernandes (CB) – Gold
+- Diogo Gonçalves (LB) – Gold
+- Miguel Esteves (CDM) – Gold
+- João Costa (CM) – Gold
+- Gonçalo Vaz (CAM) – Gold
+- André Esteves (RW) – Gold
+- Bruno Almeida (ST) – Silver
+- Tiago Lopes (LW) – Gold
+
+### 🇵🇹 Porto Mariners (Portugal – Liga Lusitana)
+- Luís Rodrigues (GK) – Gold
+- Bruno Fernandes (RB) – Bronze
+- Vasco Costa (CB) – Gold
+- Tiago Nunes (CB) – Gold
+- Luís Esteves (LB) – Gold
+- Fábio Gonçalves (CDM) – Gold
+- Gonçalo Rodrigues (CM) – Gold
+- Bruno Silva (CAM) – Silver
+- Nuno Silva (RW) – Gold
+- Tiago Vaz (ST) – Gold
+- Gonçalo Pereira (LW) – Gold
+
+### 🇵🇹 Braga Elite (Portugal – Liga Lusitana)
+- Tiago Almeida (GK) – Gold
+- Fábio Lopes (RB) – Gold
+- Bruno Rodrigues (CB) – Gold
+- Rúben Lopes (CB) – Gold
+- Bruno Costa (LB) – Bronze
+- Luís Vaz (CDM) – Silver
+- Hugo Rodrigues (CM) – Gold
+- André Silva (CAM) – Gold
+- João Rodrigues (RW) – Gold
+- Tiago Teixeira (ST) – Gold
+- Diogo Nunes (LW) – Gold
+
+### 🇷🇺 Moscow Titans (Russia – Siberian Football League)
+- Evgeni Smirnov (GK) – Gold
+- Dmitri Petrov (RB) – Bronze
+- Dmitri Smirnov (CB) – Gold
+- Boris Morozov (CB) – Gold
+- Mikhail Yakovlev (LB) – Gold
+- Kirill Antonov (CDM) – Gold
+- Alexei Antonov (CM) – Gold
+- Boris Nikolaev (CAM) – Gold
+- Igor Lebedev (RW) – Gold
+- Kirill Baranov (ST) – Gold
+- Mikhail Morozov (LW) – Silver
+
+### 🇷🇺 St. Petersburg Ice (Russia – Siberian Football League)
+- Oleg Yakovlev (GK) – Gold
+- Kirill Nikolaev (RB) – Gold
+- Sergei Baranov (CB) – Gold
+- Fyodor Morozov (CB) – Silver
+- Mikhail Golubev (LB) – Gold
+- Oleg Kuznetsov (CDM) – Gold
+- Dmitri Baranov (CM) – Gold
+- Dmitri Nikolaev (CAM) – Gold
+- Boris Golubev (RW) – Bronze
+- Vladimir Lebedev (ST) – Gold
+- Oleg Baranov (LW) – Gold
+
+### 🇷🇺 Volga FC (Russia – Siberian Football League)
+- Vladimir Antonov (GK) – Gold
+- Evgeni Volkov (RB) – Gold
+- Sergei Zaitsev (CB) – Gold
+- Kirill Morozov (CB) – Gold
+- Boris Volkov (LB) – Gold
+- Vladimir Golubev (CDM) – Silver
+- Dmitri Ivanov (CM) – Gold
+- Kirill Yakovlev (CAM) – Gold
+- Boris Kuznetsov (RW) – Gold
+- Alexei Petrov (ST) – Bronze
+- Boris Smirnov (LW) – Gold
+
+### 🇳🇱 Amsterdam Storm (Netherlands – Dutch Velocity League)
+- Ivo Smit (GK) – Gold
+- Gijs Zwaan (RB) – Bronze
+- Koen Verhoeven (CB) – Gold
+- Ivo van Dijk (CB) – Gold
+- Dirk Zwaan (LB) – Gold
+- Hans Verhoeven (CDM) – Gold
+- Koen Visser (CM) – Gold
+- Roel Zwaan (CAM) – Gold
+- Sven van Dijk (RW) – Silver
+- Hans van Dijk (ST) – Gold
+- Martijn Smit (LW) – Gold
+
+### 🇳🇱 Rotterdam Knights (Netherlands – Dutch Velocity League)
+- Jeroen Visser (GK) – Gold
+- Dirk de Boer (RB) – Gold
+- Hans Pieters (CB) – Gold
+- Pim Willems (CB) – Bronze
+- Bas Pieters (LB) – Gold
+- Dirk Pieters (CDM) – Silver
+- Ivo Meijer (CM) – Gold
+- Frank Jansen (CAM) – Gold
+- Bas Kok (RW) – Gold
+- Bas Zwaan (ST) – Gold
+- Gijs van Dijk (LW) – Gold
+
+### 🇳🇱 Eindhoven FC (Netherlands – Dutch Velocity League)
+- Dirk Jansen (GK) – Gold
+- Bas Willems (RB) – Gold
+- Jeroen van Dijk (CB) – Bronze
+- Martijn Kok (CB) – Gold
+- Sven Kok (LB) – Gold
+- Gijs Jansen (CDM) – Gold
+- Roel van der Meer (CM) – Gold
+- Sven Zwaan (CAM) – Silver
+- Gijs Mulder (RW) – Gold
+- Bas Verhoeven (ST) – Gold
+- Dirk van der Meer (LW) – Gold
+
+### 🇦🇷 Club Rosario Azul (Argentina – Primera Estilo)
+- Juan Rojas (GK) – Gold
+- Diego García (RB) – Gold
+- Nahuel Martínez (CB) – Gold
+- Matías Herrera (CB) – Gold
+- Juan López (LB) – Gold
+- Ezequiel Rojas (CDM) – Gold
+- Pablo Benítez (CM) – Gold
+- Nahuel Fernández (CAM) – Silver
+- Facundo Escobar (RW) – Gold
+- Pablo Alvarez (ST) – Gold
+- Bruno Castro (LW) – Bronze
+
+### 🇦🇷 Buenos Aires Stars (Argentina – Primera Estilo)
+- Ignacio Escobar (GK) – Gold
+- Gonzalo Martínez (RB) – Bronze
+- Matías Vargas (CB) – Silver
+- Matías Zamora (CB) – Gold
+- Bruno Fernández (LB) – Gold
+- Ignacio Zamora (CDM) – Gold
+- Tomás Zamora (CM) – Gold
+- Diego Alvarez (CAM) – Gold
+- Pablo Zamora (RW) – Gold
+- Ezequiel Fernández (ST) – Gold
+- Ezequiel Vargas (LW) – Gold
+
+### 🇦🇷 Cordoba United (Argentina – Primera Estilo)
+- Rodrigo Escobar (GK) – Silver
+- Santiago Rojas (RB) – Gold
+- Ezequiel Domínguez (CB) – Gold
+- Matías García (CB) – Gold
+- Ezequiel López (LB) – Gold
+- Juan Castro (CDM) – Gold
+- Santiago Escobar (CM) – Gold
+- Rodrigo Vargas (CAM) – Gold
+- Tomás Herrera (RW) – Bronze
+- Matías Alvarez (ST) – Gold
+- Rodrigo García (LW) – Gold
+
+### 🇯🇵 Tokyo Phoenix (Japan – Neo Nippon League)
+- Naoki Yoshida (GK) – Gold
+- Isamu Yoshida (RB) – Gold
+- Ren Ogawa (CB) – Gold
+- Isamu Ueda (CB) – Gold
+- Akira Matsuda (LB) – Bronze
+- Ren Nakamura (CDM) – Gold
+- Hiro Yoshida (CM) – Gold
+- Shinji Ishikawa (CAM) – Silver
+- Zento Fujimoto (RW) – Gold
+- Akira Yoshida (ST) – Gold
+- Isamu Saito (LW) – Gold
+
+### 🇯🇵 Osaka Blades (Japan – Neo Nippon League)
+- Daiki Ueda (GK) – Gold
+- Kaito Kobayashi (RB) – Bronze
+- Naoki Ishikawa (CB) – Gold
+- Hiro Saito (CB) – Gold
+- Daiki Kobayashi (LB) – Silver
+- Yuki Ogawa (CDM) – Gold
+- Naoki Matsuda (CM) – Gold
+- Junpei Ishikawa (CAM) – Gold
+- Takumi Kobayashi (RW) – Gold
+- Yuki Nakamura (ST) – Gold
+- Akira Hayashi (LW) – Gold
+
+### 🇯🇵 Kyoto Spirits (Japan – Neo Nippon League)
+- Yuki Watanabe (GK) – Gold
+- Yuki Matsuda (RB) – Gold
+- Isamu Hayashi (CB) – Gold
+- Naoki Saito (CB) – Gold
+- Hiro Nakamura (LB) – Silver
+- Akira Yamada (CDM) – Gold
+- Takumi Hayashi (CM) – Gold
+- Shinji Yoshida (CAM) – Gold
+- Junpei Matsuda (RW) – Bronze
+- Isamu Kobayashi (ST) – Gold
+- Zento Yamada (LW) – Gold
+
+### 🇺🇸 Liberty FC (Unitedstates – National Football Circuit)
+- Grayson Payne (GK) – Gold
+- Grayson Bennett (RB) – Silver
+- Noah Cooper (CB) – Gold
+- Grayson Hayes (CB) – Bronze
+- Hunter Bennett (LB) – Gold
+- Parker Hayes (CDM) – Gold
+- Carter Turner (CM) – Gold
+- Noah Ellis (CAM) – Gold
+- Mason Kelly (RW) – Gold
+- Jackson Kelly (ST) – Gold
+- Brady Ellis (LW) – Gold
+
+### 🇺🇸 New York Thunder (Unitedstates – National Football Circuit)
+- Parker Grant (GK) – Gold
+- Ethan Turner (RB) – Gold
+- Tyler Grant (CB) – Gold
+- Tyler Fisher (CB) – Gold
+- Ethan Duncan (LB) – Silver
+- Dylan Turner (CDM) – Gold
+- Brady Hayes (CM) – Gold
+- Noah Duncan (CAM) – Bronze
+- Mason Hayes (RW) – Gold
+- Brady Payne (ST) – Gold
+- Carter Kelly (LW) – Gold
+
+### 🇺🇸 Pacific Bay FC (Unitedstates – National Football Circuit)
+- Logan Grant (GK) – Gold
+- Carter Hayes (RB) – Gold
+- Ethan Bennett (CB) – Gold
+- Brady Kelly (CB) – Gold
+- Brady Cooper (LB) – Gold
+- Mason Warren (CDM) – Gold
+- Logan Cooper (CM) – Bronze
+- Hunter Duncan (CAM) – Gold
+- Jackson Turner (RW) – Gold
+- Tyler Jordan (ST) – Silver
+- Parker Warren (LW) – Gold
+
+### 🇨🇦 Toronto Peaks (Canada – Maple League)
+- Jackson Dubois (GK) – Gold
+- Wyatt Michaud (RB) – Gold
+- Blake Michaud (CB) – Silver
+- Riley Roy (CB) – Gold
+- Aiden Michaud (LB) – Gold
+- Cooper Simard (CDM) – Gold
+- Aiden Thibault (CM) – Gold
+- Cooper Dubois (CAM) – Bronze
+- Riley Gagnon (RW) – Gold
+- Blake Roy (ST) – Gold
+- Dylan Thibault (LW) – Gold
+
+### 🇨🇦 Vancouver Aurora (Canada – Maple League)
+- Aiden Dubois (GK) – Gold
+- Cooper Gagnon (RB) – Gold
+- Finn Vachon (CB) – Gold
+- Finn Boucher (CB) – Gold
+- Liam Dubois (LB) – Bronze
+- Wyatt Simard (CDM) – Gold
+- Liam Thibault (CM) – Gold
+- Liam Vachon (CAM) – Silver
+- Jackson Tremblay (RW) – Gold
+- Jackson Lambert (ST) – Gold
+- Jackson Michaud (LW) – Gold
+
+### 🇨🇦 Montreal Impact (Canada – Maple League)
+- Wyatt Proulx (GK) – Gold
+- Owen Thibault (RB) – Gold
+- Gavin Simard (CB) – Gold
+- Cooper Roy (CB) – Gold
+- Finn Thibault (LB) – Gold
+- Liam Roy (CDM) – Gold
+- Blake Vachon (CM) – Gold
+- Finn Simard (CAM) – Bronze
+- Evan Vachon (RW) – Gold
+- Jackson Martin (ST) – Silver
+- Wyatt Tremblay (LW) – Gold
+
+### 🇧🇷 Rio Dragons (Brazil – Liga do Ouro)
+- Thiago Souza (GK) – Gold
+- Rafael Silva (RB) – Gold
+- Marcelo Barbosa (CB) – Gold
+- Henrique Gomes (CB) – Gold
+- Caio Alves (LB) – Gold
+- Rafael Dias (CDM) – Gold
+- Caio Nascimento (CM) – Gold
+- Isaias Gomes (CAM) – Bronze
+- João Lima (RW) – Gold
+- Caio Gomes (ST) – Gold
+- Felipe Lima (LW) – Silver
+
+### 🇧🇷 São Verde FC (Brazil – Liga do Ouro)
+- Rafael Barbosa (GK) – Gold
+- Eduardo Nascimento (RB) – Gold
+- Marcelo Dias (CB) – Silver
+- Henrique Campos (CB) – Gold
+- Daniel Silva (LB) – Gold
+- Felipe Pereira (CDM) – Gold
+- Gustavo Alves (CM) – Gold
+- Gustavo Lima (CAM) – Bronze
+- Henrique Freitas (RW) – Gold
+- Gustavo Souza (ST) – Gold
+- Felipe Nascimento (LW) – Gold
+
+### 🇧🇷 Porto Sol (Brazil – Liga do Ouro)
+- Daniel Gomes (GK) – Gold
+- Lucas Pereira (RB) – Gold
+- Felipe Silva (CB) – Gold
+- Rafael Oliveira (CB) – Gold
+- Gustavo Pereira (LB) – Bronze
+- Isaias Souza (CDM) – Gold
+- Henrique Pereira (CM) – Gold
+- Felipe Gomes (CAM) – Gold
+- Lucas Gomes (RW) – Silver
+- Vitor Lima (ST) – Gold
+- Caio Lima (LW) – Gold
+
+### 🇪🇸 Fake Madrid (Spain – Liga Estrella)
+- Diego Torres (GK) – Bronze
+- Gerardo Navarro (RB) – Gold
+- Enrique Torres (CB) – Gold
+- Luis Pascual (CB) – Gold
+- Pablo Hernández (LB) – Gold
+- Javier Hernández (CDM) – Silver
+- Francisco Hernández (CM) – Gold
+- Víctor Domínguez (CAM) – Gold
+- Pablo Navarro (RW) – Gold
+- Gerardo Vázquez (ST) – Gold
+- Raúl Pascual (LW) – Gold
+
+### 🇪🇸 Varcelline (Spain – Liga Estrella)
+- Luis Torres (GK) – Gold
+- Víctor Rodríguez (RB) – Bronze
+- Raúl Rodríguez (CB) – Gold
+- Adrián Pascual (CB) – Gold
+- Ignacio Carballo (LB) – Silver
+- Sergio Méndez (CDM) – Gold
+- Carlos Domínguez (CM) – Gold
+- Luis Rodríguez (CAM) – Gold
+- Carlos Pascual (RW) – Gold
+- Ignacio Méndez (ST) – Gold
+- Sergio Álvarez (LW) – Gold
+
+### 🇪🇸 Non Atletic Capitals (Spain – Liga Estrella)
+- Raúl Hernández (GK) – Gold
+- Diego López (RB) – Gold
+- Ignacio Domínguez (CB) – Gold
+- Pablo Fernández (CB) – Bronze
+- Enrique López (LB) – Gold
+- Carlos Vázquez (CDM) – Gold
+- Francisco Domínguez (CM) – Gold
+- Raúl Gil (CAM) – Gold
+- Víctor Torres (RW) – Gold
+- Pablo Carballo (ST) – Gold
+- Adrián Navarro (LW) – Silver
+
+### 🇬🇧 Kingchester Town (England – Imperial League)
+- Darcy Davies (GK) – Bronze
+- Jenson Carter (RB) – Gold
+- Freddie Keegan (CB) – Silver
+- Jenson Munro (CB) – Gold
+- Callum Wallis (LB) – Gold
+- Toby Jennings (CDM) – Gold
+- Lennon Keegan (CM) – Gold
+- Harris Griffin (CAM) – Gold
+- Darcy Brook (RW) – Gold
+- Rory Jennings (ST) – Gold
+- Harris Farrell (LW) – Gold
+
+### 🇬🇧 Liverriver (England – Imperial League)
+- Darcy Munro (GK) – Gold
+- Harris Lawson (RB) – Gold
+- Lennon Sullivan (CB) – Gold
+- Kobe Davies (CB) – Gold
+- Ewan Brook (LB) – Gold
+- Stanley Wallis (CDM) – Silver
+- Lennon Newman (CM) – Bronze
+- Rory Brook (CAM) – Gold
+- Rory Farrell (RW) – Gold
+- Freddie Wallis (ST) – Gold
+- Milo Lawson (LW) – Gold
+
+### 🇬🇧 Chellake (England – Imperial League)
+- Toby Lawson (GK) – Gold
+- Stanley Newman (RB) – Gold
+- Alfie Hawkins (CB) – Gold
+- Harris Hawkins (CB) – Gold
+- Lennon Carter (LB) – Gold
+- Lennon Jennings (CDM) – Gold
+- Darcy Newman (CM) – Bronze
+- Toby Wallis (CAM) – Gold
+- Ewan Farrell (RW) – Gold
+- Alfie Lawson (ST) – Gold
+- Milo Farrell (LW) – Silver
+
