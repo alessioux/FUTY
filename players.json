@@ -1,0 +1,49 @@
+{
+  "players": [
+    {
+      "name": "abdullah",
+      "stats": {
+        "pace": {
+          "acceleration": 99,
+          "speed": 99
+        },
+        "shooting": {
+          "positioning": 99,
+          "power": 99,
+          "long": 99,
+          "volleys": 99,
+          "penalties": 99
+        },
+        "passing": {
+          "vision": 99,
+          "cross": 99,
+          "short": 99,
+          "long": 99,
+          "curve": 99
+        },
+        "dribbling": {
+          "agility": 99,
+          "balance": 99,
+          "reactions": 99,
+          "control": 99,
+          "dribbling": 99
+        },
+        "defending": {
+          "intercept": 99,
+          "heading": 99,
+          "tackle": 99,
+          "sliding": 99
+        },
+        "physicality": {
+          "jumping": 99,
+          "stamina": 99,
+          "strength": 99,
+          "aggression": 99
+        }
+      },
+      "positions": ["ST"],
+      "other": ["italy","icon","icon"],
+      "rarity": "icon"
+    }
+  ]
+}
